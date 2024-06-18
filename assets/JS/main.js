@@ -59,13 +59,14 @@ const sr = ScrollReveal({
 /*SCROLL HOME*/
 sr.reveal('.home__title__text', {origin:'left'})
 sr.reveal('.home__scroll', {delay: 200})
-sr.reveal('.home__img', {origin:'left', delay: 100})
-sr.reveal('.home__intro_box', {origin:'left'})
+sr.reveal('.home__img', {origin:'left', delay: 200})
+sr.reveal('.home__intro_box', {origin:'right', delay: 200})
+sr.reveal('.console-underscore', {origin:'left', delay: 1000})
 sr.reveal('.work-heading', {origin:'left'})
 sr.reveal('.home-button', {origin:'left', delay: 200})
 sr.reveal('.home__social-links', {origin:'left', delay: 200})
-sr.reveal('.bg_circleline', {origin:'top'})
-sr.reveal('.white_circle', {origin:'top'})
+sr.reveal('.home__social-follow', {origin:'top', delay: 600})
+
 
 /*SCROLL ABOUT*/
 sr.reveal('.about__img', {delay: 500})
@@ -87,13 +88,13 @@ sr.reveal('.portfolio__card_b', {origin:'right'})
 
 /*SCROLL CONTACT )*/
 sr.reveal('.contact__img', {origin:'left', delay: 400})
-sr.reveal('.contact__subtitle', {})
+sr.reveal('.contact__subtitle', {origin:'left'})
 sr.reveal('.contact__text', {interval: 200})
 sr.reveal('.contact__input', {delay: 400})
 sr.reveal('.contact__button', {delay: 600})
 
 /*===== TYPE TEXT ANIMATION =====*/
-consoleText(['Hi, I am Rachel', ' A Full Stack Web Developer', 'I love to build magical websites.'], 'text',['#FAFAFF','#f5de8c','#FAFAFF']);
+consoleText(['Abracadabra!', 'Hello, My Name Is Rachel', 'I Am A Full Stack Web Developer & Digital Designer', 'I Would Love To Build A Website For You.'], 'text',[ '#f5de8c','#FAFAFF','#FAFAFF','#FAFAFF']);
 
 function consoleText(words, id, colors) {
   if (colors === undefined) colors = ['#fff'];
@@ -150,9 +151,9 @@ const str = "Looking For A Digitial Wizard?--- ";
 const letter = document.getElementById("letter");
 window.onload = () => {
   for (let i = 0; i < str.length; i++) {
-    let span = document.createElement("span");
-    span.innerHTML = str[i];
-    letter.appendChild(span);
-    span.style.transform = `rotate(${i * 11}deg)`;
+    let spin = document.createElement("spin");
+    spin.innerHTML = str[i];
+    letter.appendChild(spin);
+    spin.style.transform = `rotate(${i * 11}deg)`;
   }
 };
