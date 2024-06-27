@@ -93,8 +93,8 @@ sr.reveal('.contact__text', {interval: 200})
 sr.reveal('.contact__input', {delay: 400})
 sr.reveal('.contact__button', {delay: 600})
 
-/*===== TYPE TEXT ANIMATION =====*/
-consoleText(['Abracadabra!', 'Hello, My Name Is Rachel', 'I Am A Full Stack Web Developer & Digital Designer', 'I Would Love To Build A Website For You.'], 'text',[ '#f5de8c','#FAFAFF','#FAFAFF','#FAFAFF']);
+/*===== TYPE TEXT ANIMATION , 'Hello, My Name Is Rachel', 'I Am A Full Stack Web Developer & Digital Designer', 'I Would Love To Build A Website For You.' ,'#FAFAFF','#FAFAFF','#FAFAFF' =====*/
+consoleText(['Abracadabra!'], 'text',[ '#f5de8c']);
 
 function consoleText(words, id, colors) {
   if (colors === undefined) colors = ['#fff'];
@@ -119,19 +119,19 @@ function consoleText(words, id, colors) {
         target.setAttribute('style', 'color:' + colors[0])
         letterCount += x;
         waiting = false;
-      }, 1000)
+      }, 2000)
     } else if (letterCount === words[0].length + 1 && waiting === false) {
       waiting = true;
       window.setTimeout(function() {
         x = -1;
         letterCount += x;
         waiting = false;
-      }, 1000)
+      }, 4000)
     } else if (waiting === false) {
       target.innerHTML = words[0].substring(0, letterCount)
       letterCount += x;
     }
-  }, 150)
+  }, 300)
   window.setInterval(function() {
     if (visible === true) {
       con.className = 'console-underscore hidden'
@@ -142,7 +142,7 @@ function consoleText(words, id, colors) {
 
       visible = true;
     }
-  }, 400)
+  }, 800)
 }
 
 /*===== CIRCLE TEXT ANIMATION =====*/
@@ -157,3 +157,4 @@ window.onload = () => {
     spin.style.transform = `rotate(${i * 11}deg)`;
   }
 };
+
