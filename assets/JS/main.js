@@ -56,11 +56,11 @@ const sr = ScrollReveal({
     reset: true
 })
 
-/*SCROLL HOME*/
-sr.reveal('.home__title__text', {origin:'left'})
+/*SCROLL HOME 
+sr.reveal('.home__title__text', {origin:'left'}) */
 sr.reveal('.home__scroll', {delay: 200})
 sr.reveal('.home__img', {origin:'left', delay: 200})
-sr.reveal('.home__intro_box', {origin:'right', delay: 200})
+sr.reveal('.home__intro_box', {origin:'bottom', delay: 200})
 sr.reveal('.console-underscore', {origin:'left', delay: 1000})
 sr.reveal('.work-heading', {origin:'left'})
 sr.reveal('.home-button', {origin:'left', delay: 200})
@@ -93,8 +93,23 @@ sr.reveal('.contact__text', {interval: 200})
 sr.reveal('.contact__input', {delay: 400})
 sr.reveal('.contact__button', {delay: 600})
 
-/*===== TYPE TEXT ANIMATION , 'Hello, My Name Is Rachel', 'I Am A Full Stack Web Developer & Digital Designer', 'I Would Love To Build A Website For You.' ,'#FAFAFF','#FAFAFF','#FAFAFF' =====*/
-consoleText(['Abracadabra!'], 'text',[ '#f5de8c']);
+/*===== CIRCLE TEXT ANIMATION =====*/
+
+const str = "Looking For A Digitial Wizard?--- ";
+const letter = document.getElementById("letter");
+window.onload = () => {
+  for (let i = 0; i < str.length; i++) {
+    let spin = document.createElement("spin");
+    spin.innerHTML = str[i];
+    letter.appendChild(spin);
+    spin.style.transform = `rotate(${i * 11}deg)`;
+  }
+};
+
+
+/*===== TYPE TEXT ANIMATION =====*/
+
+consoleText(['Looking for a digital transformation?', 'I would love to build a website for you.', 'Lets work together!'], 'text',[ '#f5de8c','#FAFAFF','#FAFAFF']);
 
 function consoleText(words, id, colors) {
   if (colors === undefined) colors = ['#fff'];
@@ -119,19 +134,19 @@ function consoleText(words, id, colors) {
         target.setAttribute('style', 'color:' + colors[0])
         letterCount += x;
         waiting = false;
-      }, 2000)
+      }, 1000)
     } else if (letterCount === words[0].length + 1 && waiting === false) {
       waiting = true;
       window.setTimeout(function() {
         x = -1;
         letterCount += x;
         waiting = false;
-      }, 4000)
+      }, 1000)
     } else if (waiting === false) {
       target.innerHTML = words[0].substring(0, letterCount)
       letterCount += x;
     }
-  }, 300)
+  }, 150)
   window.setInterval(function() {
     if (visible === true) {
       con.className = 'console-underscore hidden'
@@ -142,19 +157,7 @@ function consoleText(words, id, colors) {
 
       visible = true;
     }
-  }, 800)
+  }, 400)
 }
 
-/*===== CIRCLE TEXT ANIMATION =====*/
-
-const str = "Looking For A Digitial Wizard?--- ";
-const letter = document.getElementById("letter");
-window.onload = () => {
-  for (let i = 0; i < str.length; i++) {
-    let spin = document.createElement("spin");
-    spin.innerHTML = str[i];
-    letter.appendChild(spin);
-    spin.style.transform = `rotate(${i * 11}deg)`;
-  }
-};
 
