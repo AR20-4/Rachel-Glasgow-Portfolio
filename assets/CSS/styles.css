@@ -1459,7 +1459,7 @@ border: 1px solid rgba(255, 255, 255, 0.3);
     /* ===== HOME =====*/
     .home__container{
         margin-top: 100px;
-        height: 115vh;
+        height: 180vh;
         width: 100%;  
     }
     .home__img{
@@ -1704,7 +1704,7 @@ border: 1px solid rgba(255, 255, 255, 0.3);
     }
     .home__container{
         margin-top: 100px;
-        height: 100vh;
+        height: 180vh;
         width: 100%;  
     } 
     .bg_circleline{
@@ -1794,7 +1794,7 @@ border: 1px solid rgba(255, 255, 255, 0.3);
     }
     .home__container{
         margin-top: 100px;
-        height: 100vh;
+        height: 180vh;
         width: 100%;  
     } 
     .bg_circleline{
@@ -1906,9 +1906,4 @@ border: 1px solid rgba(255, 255, 255, 0.3);
 
 }
    
-
-
-
-
-
 
