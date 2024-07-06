@@ -56,8 +56,8 @@ const sr = ScrollReveal({
     reset: true
 })
 
-/*SCROLL HOME 
-sr.reveal('.home__title__text', {origin:'left'}) */
+/*SCROLL HOME  */
+sr.reveal('.home__title', {origin:'left'}) 
 sr.reveal('.home__scroll', {delay: 200})
 sr.reveal('.home__img', {origin:'left', delay: 200})
 sr.reveal('.home__intro_box', {origin:'bottom', delay: 200})
@@ -95,7 +95,7 @@ sr.reveal('.contact__button', {delay: 600})
 
 /*===== CIRCLE TEXT ANIMATION =====*/
 
-const str = "Looking For A Digitial Wizard?--- ";
+const str = "Looking For A Digital Wizard? -- ";
 const letter = document.getElementById("letter");
 window.onload = () => {
   for (let i = 0; i < str.length; i++) {
@@ -159,5 +159,6 @@ function consoleText(words, id, colors) {
     }
   }, 400)
 }
+
 
 
