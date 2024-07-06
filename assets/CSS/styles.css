@@ -280,7 +280,8 @@ img{
     line-height: 2em;
     padding: 1em;
     border-radius: 8rem;
-    opacity: .55;
+    opacity: .60;
+    color: white;
   }
   
 
@@ -659,7 +660,7 @@ img{
   .portfolio__content {
     background-color: #e5e5f7;
     opacity: 0.8;
-    background: linear-gradient(135deg, #444cf755 25%, transparent 25%) -10px 0/ 20px 20px, linear-gradient(225deg, #b58fe1 25%, transparent 25%) -10px 0/ 20px 20px, linear-gradient(315deg, #c992ac 25%, transparent 25%) 0px 0/ 20px 20px, linear-gradient(45deg, #58cada 25%, #e5e5f7 25%) 0px 0/ 20px 20px;
+    background: linear-gradient(135deg, #5159f655 25%, transparent 25%) -10px 0/ 20px 20px, linear-gradient(225deg, #b58fe1cb 25%, transparent 25%) -10px 0/ 20px 20px, linear-gradient(315deg, #c992accf 25%, transparent 25%) 0px 0/ 20px 20px, linear-gradient(45deg, #58cbdab1 25%, #e5e5f7 25%) 0px 0/ 20px 20px;
     border-radius: .5rem;
     overflow: hidden;
     box-shadow: 0 4px 6px rgba(174, 190, 205, 0.3);
@@ -1752,13 +1753,7 @@ border: 1px solid rgba(255, 255, 255, 0.3);
         padding-top: 5px;
      }
     
-     .social-box{
-        margin-top: 100px;
-     } 
-     .home__social-link{
-        font-size: 3rem;
-        margin-top: 40px;
-     }
+
      .work-heading{
         font-size: 2.8em;
         background-size: 90% 3em;
@@ -1771,26 +1766,29 @@ border: 1px solid rgba(255, 255, 255, 0.3);
      }
      .box__container-b{
         margin-left: 28rem;
-        margin-top: -79rem;
+        margin-top: -96rem;
         height: 400px;
         width: 400px;
      }
      .home-button{
-        margin-left: 32rem;
-        margin-top: -78rem;
+        margin-left: 30rem;
+        margin-top: -96rem;
      }
      .button-light{
         font-size: 1.1rem;
      }
      .white_circle{
-        margin-top: -350px;
+        margin-top: 50px;
         margin-left:320px;
         max-width: 1000px;
      }
 
      .social-box{
-        margin-top: -8rem;
+        margin-top: -7rem;
         margin-left: -30rem;
+     }
+     .home__social-link{
+        padding-top: 1rem;
      }
   
     .about__social{
@@ -1869,32 +1867,31 @@ border: 1px solid rgba(255, 255, 255, 0.3);
      }
      .social-box{
         margin-top: -5rem;
+       
      } 
-     .home__social-link{
-        font-size: 3rem;
-        margin-top: 40px;
-     }
+
      .work-heading{
         font-size: 2.8em;
         background-size: 100% 8em;
         margin-top: -50rem;
         margin-bottom: 46rem;
      }
+     
      .box__container-b{
         margin-left: 26rem;
-        margin-top: -97rem;
+        margin-top: -97.5rem;
         height: 400px;
         width: 400px;
      }
      .home-button{
-        margin-left: 29rem;
-        margin-top: -96rem;
+        margin-left: 28rem;
+        margin-top: -97rem;
      }
      .button-light{
         font-size: 1.2rem;
      }
      .white_circle{
-        margin-top: -5rem;
+        margin-top: 5rem;
         margin-left:320px;
         max-width: 1000px;
      }
