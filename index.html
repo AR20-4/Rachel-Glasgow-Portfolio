@@ -2,11 +2,13 @@
     <html lang="en">
     <head>
         <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
         <!-- ===== CSS ===== -->
         <link rel="stylesheet" href="assets/CSS/styles.css">
-
+          <!--=============== SWIPER CSS ===============-->
+          <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
         <!-- ===== BOX ICONS ===== -->
         <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
          <!-- ===== ANIMATION ON SCROLL ===== -->
@@ -76,7 +78,7 @@
             </div>
 
             <div class="home__intro_box">
-           <p class="home__intro_title"><span>Hi! I'm Rachel, A Front-end Web Developer & Digital Designer.</span></p>
+           <p class="home__intro_title"><span>Hi! I'm Rachel, I'm A Front-End Focused Web Developer & Digital Designer.</span></p>
           </div>
 
             <div class="work-heading"><span>
@@ -104,10 +106,10 @@
                      
               <div class="home-button">
                 <div>
-                  <a download="" href="assets/pdf/myResume.pdf" class="button button-light"> Download My CV</a>    
+                  <a download="" href="assets/PDF/Rachel_Glasgow_2024_digital_CV.pdf" class="button button-light"> Download My CV</a>    
                 </div>
                 <div>
-                  <a href="#portfolio"  class="button  button-light">See My Work</a>    
+                  <a href="#portfolio__subtitle"  class="button  button-light">See My Work</a>    
                 </div>
                 <div>
                   <a href="#contact" class="button  button-light">Hire Me</a>    
@@ -137,7 +139,7 @@
             <div class="about__box">
                 <h2 class="about__subtitle">Rachel Glasgow</h2>
                 <span class="about__profession">Web Developer</span>
-                <p class="about__text">I am a web developer who loves crafting meaningful digital experiences for your customers and clients. I specialize in refined web experiences with a focus on animation, responsiveness, and interactive content. I am multi-disciplined in marketing principles, web development and the digital design process.</p>
+                <p class="about__text">I am a skilled front-end focused web developer who loves turning lines of code into stunning, visually appealing, and user-friendly websites. Multi-talented, my interests are split between focusing on building full-stack web applications with MERN and immersing myself in learning to craft meaningful web experiences with P5.js, animation libraries, and creating interactive content. </p>
            
             <div class="about__social">
               <a href="https://www.linkedin.com/in/hirerachelglasgow/" class="about__social-icon"><i class='bx bxl-linkedin' ></i></a>
@@ -152,27 +154,40 @@
        <section class="portfolio section" id="portfolio">
         <span class="section-subtitle"></span>
         <h2 class="section-title">Portfolio</h2>
-        
-        <div class="portfolio__nav">
-            <span class="portfolio__item">My Work</span>  
-        </div>
+        <div class="portfolio__content">
+          <div class="portfolio__intro__wrapper">
+            <div class="portfolio__item">
+             My portfolio stands as a testament throughout my journey as a web developer to continuously grow and yern to craft exceptional digital experiences.
+          </div> 
+        </div> 
+     
 
-        <div class="portfolio__container bd-grid">
-       
-          <div class="portfolio__card_a">
-            <div class="portfolio__content mix web"> 
-              <div class="portfolio__data-container">
+        <div class="subtitle__box">
+          <span class="portfolio__subtitle" id="portfolio__subtitle">Web Development</span>
+          </div>
 
-                <div class="subtitle__box">
-                <span class="portfolio__subtitle">Web Development</span>
-                </div>
+          <div class="portfolio__title__wrapper">
+            <h1 class="card-title">Tuscan Table</h1>
+          </div>
 
+        <div class="portfolio__container swiper swiper-container1 ">
+          <div class="portfolio__container_wrapper swiper-wrapper">
+
+            <div class="port-card-wrapper  swiper-slide">
+              <div class="portfolio__data-container ">
                <div class="portfolio__data">
-                <h1 class="card-title">Homaway Real Estate</h1>
                 <div class="portfolio__img">
-                <a href="https://ar20-4.github.io/Real-estate-site/"><img src="assets/IMG/realestate.gif" alt=""></a>
+                <a href="https://tuscantableristorante.com/"><img src="assets/IMG/TuscanTablevid.gif" alt=""></a>
+                </div>
+               </div>
               </div>
-              <div class="port-info-box">
+           </div>
+
+        <div class="port-card-wrapper  swiper-slide">
+          <div class="portfolio__data-container">
+            
+            <div class="card-body">
+              <div class="card-info-container">
                 <p class="card-subtitle">Tech & Methods Used <br>
                   <span class="port-skills__name">HTML</span>
                   <span class="port-skills__name">CSS</span>
@@ -180,9 +195,19 @@
                   <span class="port-skills__name">CSS flex & Grid</span>
                   <span class="port-skills__name">Javascript</span></p>
               </div>
-              
-                <div class="hidden-card">
+            </div>
+          </div>
+        </div>
+
+          <div class="port-card-wrapper swiper-slide">
+          <div class="portfolio__data-container">
                   <img src="assets/IMG/realestate_photo.png" alt="" class="website__photo"> 
+                </div>
+              </div>
+              
+              <div class="port-card-wrapper swiper-slide">
+                <div class="portfolio__data-container">
+                
                   <div class="card-body">
                     <div class="card-info-container">
                    
@@ -193,143 +218,291 @@
                         <span class="port-skills__card">Subtle Hover Effects</span>
                         <span class="port-skills__card">Image Slider</span>
                         <span class="port-skills__card">Accordion</span>
-                        <span class="port-skills__card">Smooth Scroll Action</span></p>
-                        
+                        <span class="port-skills__card">Smooth Scroll Action</span></p> 
                       </div>
                     </div>
-                   </div>
-                 </div>
+                  </div>
                 </div>
+
+           
+              </div>  <!--===== close wrapper =====-->
+              
+              <div class="swiper-pagiantion-bullet"></div>
+              <div class="swiper-button-pagination1"></div>
+                <div class="swiper-button-next swiper-navBtn"></div>
+                <div class="swiper-button-prev swiper-navBtn"></div>
+                <div class="swiper-scrollbar"></div>
+                
+                </div>  <!--===== close container =====-->
+
+                
+                <div class="button-container">
+                  <a href="https://tuscantableristorante.com/"><h2 class="button portfolio__title">Visit Site</h2></a>
+
+                  <a href="https://github.com/AR20-4/Tuscan_Table" class="button port-button-link">View Details</a>
+              </div>        
+         </div>
+
+         <div class="portfolio__content-1">
+         
+        <div class="subtitle__box">
+          <span class="portfolio__subtitle" id="portfolio__subtitle">Web Development</span>
+          </div>
+
+          <div class="portfolio__title__wrapper">
+            <h1 class="card-title">Om Yoga</h1>
+          </div>
+
+        <div class="portfolio__container swiper swiper-container1 ">
+          <div class="portfolio__container_wrapper swiper-wrapper">
+
+            <div class="port-card-wrapper  swiper-slide">
+              <div class="portfolio__data-container ">
+               <div class="portfolio__data">
+                <div class="portfolio__img">
+                <a href="https://ar20-4.github.io/OmYoga/"><img src="assets/IMG/Omyoga.gif" alt=""></a>
+                </div>
+               </div>
+              </div>
+           </div>
+
+        <div class="port-card-wrapper  swiper-slide">
+          <div class="portfolio__data-container">
+            
+            <div class="card-body">
+              <div class="card-info-container">
+                <p class="card-subtitle">Tech & Methods Used <br>
+                  <span class="port-skills__name">HTML</span>
+                  <span class="port-skills__name">CSS</span>
+                  <span class="port-skills__name">CSS BEM Model</span>
+                  <span class="port-skills__name">CSS flex & Grid</span>
+                  <span class="port-skills__name">Javascript</span></p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+          <div class="port-card-wrapper swiper-slide">
+          <div class="portfolio__data-container">
+                  <img src="assets/IMG/omyoga_photo.png" alt="" class="website__photo"> 
+                </div>
+              </div>
+              
+              <div class="port-card-wrapper swiper-slide">
+                <div class="portfolio__data-container">
+                
+                  <div class="card-body">
+                    <div class="card-info-container">
+                   
+                      <p class="card-info">Highlighted Features <br> 
+                        <span class="port-skills__card">Clean Modern Design</span>
+                        <span class="port-skills__card">Responsive</span>
+                        <span class="port-skills__card">Light and Dark Mode</span>
+                        <span class="port-skills__card">Subtle Hover Effects</span>
+                        <span class="port-skills__card">Image Slider</span>
+                        <span class="port-skills__card">Accordion</span>
+                        <span class="port-skills__card">Smooth Scroll Action</span></p> 
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+           
+              </div>  <!--===== close wrapper =====-->
+              
+              <div class="swiper-pagiantion-bullet"></div>
+              <div class="swiper-button-pagination1"></div>
+                <div class="swiper-button-next swiper-navBtn"></div>
+                <div class="swiper-button-prev swiper-navBtn"></div>
+                <div class="swiper-scrollbar"></div>
+                
+                </div>  <!--===== close container =====-->
+
+                
+                <div class="button-container">
+                  <a href="https://ar20-4.github.io/OmYoga/"><h2 class="button portfolio__title">Visit Site</h2></a>
+
+                  <a href="https://github.com/AR20-4/OmYoga" class="button port-button-link">View Details</a>
+              </div>        
+         </div>
+
+         <div class="portfolio__content-2">
+        <div class="subtitle__box">
+          <span class="portfolio__subtitle" id="portfolio__subtitle">Web Development</span>
+          </div>
+
+          <div class="portfolio__title__wrapper">
+            <h1 class="card-title">Homaway Real Estate</h1>
+          </div>
+
+        <div class="portfolio__container swiper swiper-container1 ">
+          <div class="portfolio__container_wrapper swiper-wrapper">
+
+            <div class="port-card-wrapper  swiper-slide">
+              <div class="portfolio__data-container ">
+               <div class="portfolio__data">
+                <div class="portfolio__img">
+                <a href="https://ar20-4.github.io/Real-estate-site/"><img src="assets/IMG/realestate.gif" alt=""></a>
+                </div>
+               </div>
+              </div>
+           </div>
+
+        <div class="port-card-wrapper  swiper-slide">
+          <div class="portfolio__data-container">
+            
+            <div class="card-body">
+              <div class="card-info-container">
+                <p class="card-subtitle">Tech & Methods Used <br>
+                  <span class="port-skills__name">HTML</span>
+                  <span class="port-skills__name">CSS</span>
+                  <span class="port-skills__name">CSS BEM Model</span>
+                  <span class="port-skills__name">CSS flex & Grid</span>
+                  <span class="port-skills__name">Javascript</span></p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+          <div class="port-card-wrapper swiper-slide">
+          <div class="portfolio__data-container">
+                  <img src="assets/IMG/realestate_photo.png" alt="" class="website__photo"> 
+                </div>
+              </div>
+              
+              <div class="port-card-wrapper swiper-slide">
+                <div class="portfolio__data-container">
+                
+                  <div class="card-body">
+                    <div class="card-info-container">
+                   
+                      <p class="card-info">Highlighted Features <br> 
+                        <span class="port-skills__card">Clean Modern Design</span>
+                        <span class="port-skills__card">Responsive</span>
+                        <span class="port-skills__card">Light and Dark Mode</span>
+                        <span class="port-skills__card">Subtle Hover Effects</span>
+                        <span class="port-skills__card">Image Slider</span>
+                        <span class="port-skills__card">Accordion</span>
+                        <span class="port-skills__card">Smooth Scroll Action</span></p> 
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+           
+              </div>  <!--===== close wrapper =====-->
+              
+              <div class="swiper-pagiantion-bullet"></div>
+              <div class="swiper-button-pagination1"></div>
+                <div class="swiper-button-next swiper-navBtn"></div>
+                <div class="swiper-button-prev swiper-navBtn"></div>
+                <div class="swiper-scrollbar"></div>
+                
+                </div>  <!--===== close container =====-->
+
+                
                 <div class="button-container">
                   <a href="https://ar20-4.github.io/Real-estate-site/"><h2 class="button portfolio__title">Visit Site</h2></a>
 
                   <a href="https://github.com/AR20-4/real-estate-site" class="button port-button-link">View Details</a>
+              </div>        
+         </div>
+
+         <div class="portfolio__content-3">
+        <div class="subtitle__box">
+          <span class="portfolio__subtitle" id="portfolio__subtitle">Web Development</span>
+          </div>
+
+          <div class="portfolio__title__wrapper">
+            <h1 class="card-title">Blackbird Perfume</h1>
+          </div>
+
+        <div class="portfolio__container swiper swiper-container1 ">
+          <div class="portfolio__container_wrapper swiper-wrapper">
+
+            <div class="port-card-wrapper  swiper-slide">
+              <div class="portfolio__data-container ">
+               <div class="portfolio__data">
+                <div class="portfolio__img">
+                <a href="https://ar20-4.github.io/Blackbird/"><img src="assets/IMG/blackbird.gif" alt=""></a>
+                </div>
+               </div>
+              </div>
+           </div>
+
+        <div class="port-card-wrapper  swiper-slide">
+          <div class="portfolio__data-container">
+            
+            <div class="card-body">
+              <div class="card-info-container">
+                <p class="card-subtitle">Tech & Methods Used <br>
+                  <span class="port-skills__name">HTML</span>
+                  <span class="port-skills__name">CSS</span>
+                  <span class="port-skills__name">CSS BEM Model</span>
+                  <span class="port-skills__name">CSS flex & Grid</span>
+                  <span class="port-skills__name">Javascript</span></p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+          <div class="port-card-wrapper swiper-slide">
+          <div class="portfolio__data-container">
+            <img src="assets/IMG/perfume_photo.png" alt="" class="website__photo">
                 </div>
               </div>
               
-            </div>
-         
-        
-
-
-          <div class="portfolio__card_b">
-            <div class="portfolio__content mix web">
+              <div class="port-card-wrapper swiper-slide">
                 <div class="portfolio__data-container">
-
-                  <div class="subtitle__box">
-                    <span class="portfolio__subtitle">Web Development</span>
-                   </div>
-
-                   <div class="portfolio__data">
-                    <h1 class="card-title">Blackbird Perfume</h1>
-                    <div class="portfolio__img">
-                    <a href="https://ar20-4.github.io/Blackbird/"><img src="assets/IMG/blackbird.gif" alt="" ></a>
-                    </div>
-                    <div class="port-info-box">
-                      <p class="card-subtitle">Tech & Methods Used  <br>
-                        <span class="port-skills__name">HTML</span>
-                        <span class="port-skills__name">CSS</span>
-                        <span class="port-skills__name">CSS BEM Model</span>
-                        <span class="port-skills__name">CSS flex & Grid</span>
-                        <span class="port-skills__name">Javascript</span></p>
-                    </div>
-
-                    <div class="hidden-card">
-                      <img src="assets/IMG/perfume_photo.png" alt="" class="website__photo">
-                    <div class="card-body">
-                      <div class="card-info-container">
-                    
-                          <p class="card-info">Highlighted Features <br> 
-                            <span class="port-skills__card">Clean Modern Design</span>
-                            <span class="port-skills__card">Responsive</span>
-                            <span class="port-skills__card">Light and Dark Mode</span>
-                            <span class="port-skills__card">Subtle Hover Effects</span>
-                            <span class="port-skills__card">Image Slider</span>
-                            <span class="port-skills__card">Accordion</span>
-                            <span class="port-skills__card">Smooth Scroll Action</span></p>
-                          </div>
-                        </div>
-                       </div>
+                
+                  <div class="card-body">
+                    <div class="card-info-container">
+                   
+                      <p class="card-info">Highlighted Features <br> 
+                        <span class="port-skills__card">Clean Modern Design</span>
+                        <span class="port-skills__card">Responsive</span>
+                        <span class="port-skills__card">Light and Dark Mode</span>
+                        <span class="port-skills__card">Subtle Hover Effects</span>
+                        <span class="port-skills__card">Image Slider</span>
+                        <span class="port-skills__card">Accordion</span>
+                        <span class="port-skills__card">Smooth Scroll Action</span></p> 
                       </div>
-                    </div> 
-
-                    <div class="button-container">
-                    <a href="https://ar20-4.github.io/Blackbird/"><h2 class="button portfolio__title">Visit Site</h2></a>
-                    <a href="https://ar20-4.github.io/Blackbird/" class="button port-button-link">View Details</a>
-               
-                  </div>
-                 </div>
-                </div>
-               
-
-          <div class="portfolio__card_a">
-            <div class="portfolio__content mix web">
-                <div class="portfolio__data-container">
-
-                  <div class="subtitle__box">
-                    <span class="portfolio__subtitle">Web Development</span>
-                   </div>
-                  
-                   <div class="portfolio__data">
-                    <h1 class="card-title">Om Yoga</h1>
-                    <div class="portfolio__img">
-                    <a href="https://ar20-4.github.io/OmYoga/"><img src="assets/IMG/Omyoga.gif" alt="" ></a>
-                   </div>
-
-                   <div class="port-info-box">
-                    <p class="card-subtitle">Tech & Methods Used  <br>
-                      <span class="port-skills__name">HTML</span>
-                      <span class="port-skills__name">CSS</span>
-                      <span class="port-skills__name">CSS BEM Model</span>
-                      <span class="port-skills__name">CSS flex & Grid</span>
-                      <span class="port-skills__name">Javascript</span></p>
-                   </div>
-
-                   <div class="hidden-card">
-                      <img src="assets/IMG/omyoga_photo.png" alt="" class="website__photo">
-                      <div class="card-body">
-                        <div class="card-info-container">
-                       
-                          <p class="card-info">Highlighted Features <br> 
-                            <span class="port-skills__card">Clean Modern Design</span>
-                            <span class="port-skills__card">Responsive</span>
-                            <span class="port-skills__card">Light and Dark Mode</span>
-                            <span class="port-skills__card">Subtle Hover Effects</span>
-                            <span class="port-skills__card">Image Slider</span>
-                            <span class="port-skills__card">Accordion</span>
-                            <span class="port-skills__card">Smooth Scroll Action</span></p>
-                        </div>
-                       </div>
-                      </div>
-                     </div>
                     </div>
-                    <div class="button-container">
-                      <a href="https://ar20-4.github.io/OmYoga/"><h2 class="button portfolio__title">Visit Site</h2></a>
-  
-                      <a href="https://ar20-4.github.io/OmYoga/" class="button port-button-link">View Details</a>
-                    </div>
-                   </div>
                   </div>
-                 </div>      
                 </div>
-               </section>
+
+           
+              </div>  <!--===== close wrapper =====-->
+              
+              <div class="swiper-pagiantion-bullet"></div>
+              <div class="swiper-button-pagination1"></div>
+                <div class="swiper-button-next swiper-navBtn"></div>
+                <div class="swiper-button-prev swiper-navBtn"></div>
+                <div class="swiper-scrollbar"></div>
+                
+                </div>  <!--===== close container =====-->
+
+                
+                <div class="button-container">
+                  <a href="https://ar20-4.github.io/modern-internet-banking/"><h2 class="button portfolio__title">Visit Site</h2></a>
+                  <a href="https://github.com/AR20-4/modern-internet-banking" class="button port-button-link">View Details</a>
+              </div>        
+         </div>
+      </section>
 
 
       <!--===== SKILLS =====-->
       <section class="skills section" id="skills">
         <h2 class="section-title">Skills</h2>
-        <div class="skills_pattern">
-        <div class="skills__container bd-grid">
-            
-           
-
-                <div class="container">
-                   
-                    <section class="card" data-aos="fade-left">
+        <div class="skills_pattern ">
+          
+        <div class="skills__container swiper swiper-container2">
+                <div class="container swiper-wrapper">  
+                    <div class="card-1 swiper-slide" data-aos="fade-left"> 
                       
-                      <div class="grey__box">
                          <h3 class="skills__subtitle"><span>Technical Proficiencies</span></h3>
-
+                        <div class="skills_info_wrapper">
+                          <div class="skills__box"> 
                          <div class="tech__details-box">
                           <h3><u>Tech</u></h3>
                           <p>Operating Systems: <span> MacOS, </span><span> Windows</span>
@@ -356,13 +529,19 @@
                          <div class="js-fund__box">
                          <h3><u>JS Fundamentals</u></h3>
                          <p>Variables, Data Types, Functions, Conditionals, DOM, JSON, RestAPI</p>
-                         <h3><u>Deployment Fundamentals</u></h3>
+                         <h3 class="js-fund__box-subtitle"><u>Deployment Fundamentals</u></h3>
                          <p class="deploy_info"> 
                           <span>Domain Registration, Managed Hosting, Static Hosting, SSL Certificate, FTP, SSH, CLI, and Git</span>
                         </p>
                        </div>
+                      </div>
+                    </div>
+                  </div>
                          
-
+                       <div class="card-1 swiper-slide" data-aos="fade-left"> 
+                        
+                           <h3 class="skills__subtitle"><span>Tech Stack</span></h3>
+                   <div class="skills_info_wrapper">
                          <div class="skills__box">
                             <p><span class="skills__name"><i class='bx bx-code-block' ></i></span>
                             <span class="skills__name"><i class='bx bxl-html5'></i></span>
@@ -379,14 +558,15 @@
                             <span class="skills__name"><i class='bx bxl-git'></i></span>
                             <span class="skills__name"><i class='bx bxl-mongodb'></i></span>
                          </div>
-
                         </div>
-                    </section>
-              
-                    <section class="card" data-aos="fade-right">
-                      <div>
-                        <div class="light__box">
+                        </div>
+                                  
+                    <div class="card-2 swiper-slide" data-aos="fade-left">
+                      
+                        
                         <h3 class="skills__subtitle"> <span>Design Foundations</span> </h3>
+                        <div class="skills_info_wrapper">
+                          <div class="skills__box">
                         <p class="design_header"><u>Wireframes & Mocking Tools:</u><br>
                           <span class="skills__name">Figma</span>
                             <span class="skills__name">Adobe XD</span>
@@ -400,14 +580,16 @@
                               <span class="skills__name">Wix</span>
                               <span class="skills__name">Canva</span>
                             </p>
+                          </div>
                       </div>
-                      </div>
-                    </section>
-              
-                    <section class="card" data-aos="fade-left">
-                      <div>
-                        <div class="pink__box">
+                    </div>
+                                 
+                    <div class="card-3 swiper-slide" data-aos="fade-left">
+                    
+                        
                         <h3 class="skills__subtitle"> <span>Marketing Expertise</span></h3>
+                        <div class="skills_info_wrapper">
+                          <div class="skills__box">
                         <p class="marketing_tools"><u>Marketing Tools</u> <br>
                           <span class="skills__name">CMS: Shopify, Webflow, Wix  
                           </span>
@@ -431,15 +613,15 @@
                             <span class="skills__name">Copywriting</span>
                              <span class="skills__name">Event Planning</span>
                             <span class="skills__name">Sales</span>
-                          </p>   
-                      </div>
-                      </div>
-                    </section>
+                          </p> 
+                        </div>  
+                      </div> 
+                    </div>                      
               
-                    <section class="card" data-aos="fade-right">
-                      <div>
-                        <div class="purple__box">
+                    <div class="card-4 swiper-slide" data-aos="fade-left">
+                    
                         <h3 class="skills__subtitle"> <span>Personal Assets</span></h3>
+                        <div class="skills_info_wrapper">
                         <div class="pa-box">
                         <p class="personal_assets"> 
                           <ul class="pa-list">
@@ -454,9 +636,16 @@
                           </ul>
                         </p>
                       </div>
-
-                        <div>
-                        <p class="personal-skills-box"><span>Personal Highlights</span> <br>
+                    </div>
+                 
+                  </div>
+                  
+                      <div class="card-1 swiper-slide" data-aos="fade-left"> 
+                       
+                           <h3 class="skills__subtitle"><span>Personal Highlights</span></h3>
+                           <div class="skills_info_wrapper">
+                        <div class="skills_pa_box">
+                        <p>
                           <span class="p-skills__name">Time Management</span>
                             <span class="p-skills__name">Effective Communication</span>
                             <span class="p-skills__name">Adaptability</span>
@@ -466,14 +655,18 @@
                             <span class="p-skills__name">Problem-solving Skills</span><span class="p-skills__name">Attention to Detail</span><span class="p-skills__name">Stress Management Skills</span>
                           </p>
                         </div>
-                      </div>
-                      </div>
-                    </div>
-                    </section>
-             
-                  </div>  
+                      </div> 
+                   
+                      </div> 
 
-            </div>
+                 </div> 
+                
+                    <div class="swiper-button-next swiper-btn "></div>
+                    <div class="swiper-button-prev swiper-btn"></div>
+                    <div class="swiper-button-pagination "></div>
+                    <div class="swiper-pagiantion-bullet "></div>
+                  
+          </div>
         </div> 
     </section>
 
@@ -582,23 +775,11 @@
 
      <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.5.1/CSSRulePlugin.min.js"></script>
       
-      <!--===== SCROLL L&R =====-->
+      <!--===== SCROLL L&R AOS=====-->
       <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
-      <script>
-        AOS.init({
-          offset: 400,
-          duration: 1000
-        });
-      </script>
-
-<script type="text/javascript">
-  window.addEventListener('scroll', function(){
-      const header = document.querySelector('header');
-      header.classList.toggle("sticky", window.scrollY > 0);
-  });
-
-  </script>
-
+     
+          <!--===== SWIPER JS =====-->
+          <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
       <!--===== SCROLL REVEAL =====-->
       <script src="https://unpkg.com/scrollreveal"></script>
 
@@ -607,3 +788,6 @@
 
     </body>
     </html>
+
+
+
