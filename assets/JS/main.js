@@ -75,15 +75,15 @@ sr.reveal('.about__profession', {delay: 400})
 sr.reveal('.about__text', {delay: 500})
 sr.reveal('.about__social-icon', {delay: 600, interval: 200})
 
-/*SCROLL SKILLS*/
+/*SCROLL SKILLS
 sr.reveal('.skills__subtitle', {})
 sr.reveal('.skills__name', {distance: '20px', delay: 50, interval: 100})
-
+*/
 
 /*SCROLL PORTFOLIO*/
 sr.reveal('.portfolio__card_a', {origin:'left'})
 sr.reveal('.portfolio__card_b', {origin:'right'})
-sr.reveal('.port-skills__name', {distance: '20px', delay: 50, interval: 100})
+
 
 
 /*SCROLL CONTACT )*/
@@ -160,5 +160,70 @@ function consoleText(words, id, colors) {
   }, 400)
 }
 
+/*===== AOS =====*/
+AOS.init({
+  offset: 400,
+  duration: 1000
+});
+
+type="text/javascript">
+window.addEventListener('scroll', function(){
+const header = document.querySelector('header');
+header.classList.toggle("sticky", window.scrollY > 0);
+});
+
+/*===== SWIPER =====*/
+
+const swiper1 = new Swiper('.swiper-container1', {
+  effect: 'coverflow',
+  grabCursor: true,
+  centeredSlides: true,
+  slidesPerView: 'auto',
+  loop: true,
+  coverflowEffect: {
+    rotate: 50,
+    stretch: 0,
+    depth: 100,
+    modifier: 1,
+    slideShadows: true,
+  },
+
+  navigation: {
+    nextEl: ".swiper-button-next",
+    prevEl: ".swiper-button-prev",
+},
+
+  pagination: {
+    el: '.swiper-pagination1',
+    clickable: true,
+    dynamicBullets: true,
+  },
+  scrollbar: {
+    el: '.swiper-scrollbar',
+  },
+});
+
+const swiper2 = new Swiper(".swiper-container2", {
+  spaceBetween: 32,
+  grabCursor: true,
+  centeredSlide: true,
+  slidesPerView: 'auto',
+  loop: true,
+
+  navigation: {
+      nextEl: ".swiper-button-next",
+      prevEl: ".swiper-button-prev",
+  },
+
+  pagination: {
+    el: ".swiper-pagination",
+    clickable: true,
+    dynamicBullets: true,
+  }
+});
 
 
+
+
+
+ 
