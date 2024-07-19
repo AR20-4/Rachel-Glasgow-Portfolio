@@ -737,35 +737,6 @@ img{
   }
 
   
-  .portfolio__subtitle {
-    display: inline-block;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-    font-size: 1.5rem;
-    color: #ffffff;
-    font-weight: bold;
-    letter-spacing: 2px;
-    border-radius: 50px;
-    background: #e0e0e0a2;
-    box-shadow:  10px 10px 40px #bebebe,
-             -10px -10px 40px #ffffff;
-    margin: 1rem 0rem;
-    padding: .6rem;
-    border-radius: 5rem;
-    transition: .3s;
-    width: 19ch;
-  }
-
-  .subtitle__box{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-    background-image: linear-gradient(rgb(140, 212, 247), rgb(139, 113, 255));
-    margin-top: -1rem;
-  }
-
   .portfolio__data {
     background: rgba(193, 193, 193, 0.286);
     -webkit-backdrop-filter: blur(3px);
