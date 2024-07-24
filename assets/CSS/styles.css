@@ -651,11 +651,7 @@ img{
     align-content: center;
   }
 
-  .portfolio__card_a,
-  .portfolio__card_b{
-      padding-bottom: 2rem;
-  }
-
+ 
   .portfolio__data-container{
     display: flex;
     justify-content: center;
@@ -666,26 +662,19 @@ img{
     backdrop-filter: blur(3px);
     border-radius: 5px; 
     box-shadow: 0 4px 6px rgba(174,190,205,.3);
-    margin-bottom: 2.5rem;
+    min-height: 300px;
   }
 
   .swiper-container1{
     width: 360px;
     height: 380px;
   }
-
   .portfolio__content {
+    margin-top: 3rem;
     background-color: #e5e5f7;
-    opacity: 0.8;
-    background: linear-gradient(135deg, #5159f655 25%, transparent 25%) -10px 0/ 20px 20px, linear-gradient(225deg, #b58fe1 25%, transparent 25%) -10px 0/ 20px 20px, linear-gradient(315deg, #c992accf 25%, transparent 25%) 0px 0/ 20px 20px, linear-gradient(45deg, #58cbdace 25%, #e5e5f7 25%) 0px 0/ 20px 20px;
-    border-radius: .5rem;
-    overflow: hidden;
-    box-shadow: 0 4px 6px rgba(174, 190, 205, 0.3);
-    display: block;
-    justify-content: center;
-    align-items: center; 
-    padding: 1.5rem .5rem;
+    opacity: 0.8;  
   }
+
 
   .portfolio__content-1 {
     margin-top: 3rem;
@@ -700,35 +689,7 @@ img{
     align-items: center; 
     padding: 1.5rem .5rem;
   }
-
-  .portfolio__content-2 {
-    margin-top: 3rem;
-    background-color: #e5e5f7;
-    opacity: 0.8;
-    background: linear-gradient(135deg, #6d7de96d 25%, transparent 25%) -10px 0/ 20px 20px, linear-gradient(225deg, #b287e4 25%, transparent 25%) -10px 0/ 20px 20px, linear-gradient(315deg, #c992ace3 25%, transparent 25%) 0px 0/ 20px 20px, linear-gradient(45deg, #58dac9ce 25%, #dfd0e4 25%) 0px 0/ 20px 20px;
-    border-radius: .5rem;
-    overflow: hidden;
-    box-shadow: 0 4px 6px rgba(174, 190, 205, 0.3);
-    display: block;
-    justify-content: center;
-    align-items: center; 
-    padding: 1.5rem .5rem;
-  }
-
-  .portfolio__content-3 {
-    margin-top: 3rem;
-    background-color: #e5e5f7;
-    opacity: 0.8;
-    background: linear-gradient(135deg, #6d7de96d 25%, transparent 25%) -10px 0/ 20px 20px, linear-gradient(225deg, #87dfe4 25%, transparent 25%) -10px 0/ 20px 20px, linear-gradient(315deg, #c992ace3 25%, transparent 25%) 0px 0/ 20px 20px, linear-gradient(45deg, #58dac9ce 25%, #d8a7e8 25%) 0px 0/ 20px 20px;
-    border-radius: .5rem;
-    overflow: hidden;
-    box-shadow: 0 4px 6px rgba(174, 190, 205, 0.3);
-    display: block;
-    justify-content: center;
-    align-items: center; 
-    padding: 1.5rem .5rem;
-  }
- 
+/*
   .portfolio__content:hover {
     box-shadow: 0 6px 8px rgba(174, 190, 205, 0.4);
   }
@@ -736,15 +697,9 @@ img{
     transform: scale(1.02);
   }
 
-  
-  .portfolio__data {
-    background: rgba(193, 193, 193, 0.286);
-    -webkit-backdrop-filter: blur(3px);
-    backdrop-filter: blur(3px);
-    border: 1px solid rgba(193, 193, 193, 0.898);
-    border-radius: .5rem;
-    margin-bottom: 1rem;
-  }
+  */
+
+
 
   .portfolio__title__wrapper{
     background: rgba(193, 193, 193, 0.286);
@@ -760,8 +715,6 @@ img{
   .card-body{
     max-width: 350px;
     min-height:350px; 
-    top: 430px;
-   
     border-radius: 15px;
     color: #fff;
     padding: 30px;
@@ -875,14 +828,17 @@ img{
     justify-content: center;
     align-items: center;
     align-self: center;
+    background-color: #e5e5f7;
+    opacity: 0.8;
+    background: linear-gradient(135deg, #5159f655 25%, transparent 25%) -10px 0/ 20px 20px, linear-gradient(225deg, #b287e4 25%, transparent 25%) -10px 0/ 20px 20px, linear-gradient(315deg, #c992ace3 25%, transparent 25%) 0px 0/ 20px 20px, linear-gradient(45deg, #5874dace 25%, #bee2de 25%) 0px 0/ 20px 20px;
+    border-radius: .5rem;
+    overflow: hidden;
+    box-shadow: 0 4px 6px rgba(174, 190, 205, 0.3);
+   
     margin-left: 3rem;
     margin-right: 2rem;
     margin-top: 1rem;
-    background: rgb(233, 231, 231);
-    -webkit-backdrop-filter: blur(3px);
-    backdrop-filter: blur(3px);
-    border: 1px solid rgba(193, 193, 193, 0.898);
-    border-radius: .5rem;
+    
     padding-top: 1.5rem;
     padding-bottom: .5rem;
     padding-left: 3rem;
@@ -928,14 +884,18 @@ img{
 }
 
   .website__photo{
-    min-height: 350px;
+    display: block;
+    justify-content: center;
+    align-items: center;
+    align-self: center;
+    max-height: 350px;
     border-radius: 1rem;
     transition: .4s;
-    margin: 0rem 0rem 2rem 0rem;
+    margin: 1rem 0rem;
   }
 
-  .portfolio__img {
-    margin-top: 1rem;
+  .portfolio__img  {
+    margin: 1rem 0rem;
     overflow: hidden;
     border-radius: .5rem;
     min-height: 300px;
@@ -946,7 +906,7 @@ img{
     margin-top: 1rem;
     overflow: hidden;
     border-radius: .5rem;
-    min-height: 250px;
+    min-height: 260px;
     transition: .4s;
   }
 
@@ -1716,21 +1676,35 @@ border: 1px solid rgba(255, 255, 255, 0.3);
         justify-items: center;
     }
     .portfolio__container{
-        grid-template-columns: repeat(1, 1fr);
-        grid-template-rows: repeat(2, 1fr);
-        column-gap: 2rem;
-        row-gap: 2rem;
-        padding: .5rem;
         justify-content: center;
         align-items: center;
         justify-items: center;
     }
+.portfolio__data-container{
+    min-height: 450px;
+}
+   
     .portfolio__img{
-        min-width: 550px;
+        min-width: 500px;
     }
-    .portfolio__content{
-        padding: 3rem;
+
+    .portfolio__img video{
+        min-width: 500px;
     }
+
+    .website__photo{
+        max-height: 450px;
+    }
+
+    .swiper-container1{
+        min-width: 650px;
+        min-height: 500px;
+      }
+      .portfolio__content {
+        margin-top: 3rem;
+        background-color: #e5e5f7;
+        opacity: 0.8;  
+      }
     .button-container{
         display: flex;
         justify-content: center;
@@ -1739,7 +1713,7 @@ border: 1px solid rgba(255, 255, 255, 0.3);
     } 
  /* ===== SKILLS =====*/
     .card-1, .card-2, .card-3, .card-4{
-        min-width: 600px ;
+        min-height: 600px ;
     }
     .swiper-navBtn {
         display: none;
@@ -1875,15 +1849,12 @@ border: 1px solid rgba(255, 255, 255, 0.3);
     .about__social-icon{
         font-size: 3rem;
     }
-    .portfolio__container{
-        padding: 2rem;
+
+    .portfolio__data-container{
+        min-height: 450px;
     }
-    .portfolio__content{
-        padding: 3rem;
-    }
-    .portfolio__img{
-        max-width: 900px;
-    }   
+      
+
 }
 
 @media screen and (min-width: 1024px){
@@ -1982,15 +1953,6 @@ border: 1px solid rgba(255, 255, 255, 0.3);
     .about__social-icon{
         font-size: 3rem;
     }
-    .portfolio__container{
-        padding: 2rem;
-    }
-    .portfolio__content{
-        padding: 3rem;
-    }
-    .portfolio__img{
-        width: 830px;
-    }  
 
     .contact__img{
         padding-left: 1rem;
@@ -1999,13 +1961,8 @@ border: 1px solid rgba(255, 255, 255, 0.3);
         margin-left: 12rem;
     }
 
-    card-1, .card-2, .card-3, .card-4{
-        min-width: 800px ;
-        font-size: 1.5rem;
-    }
-
-    .skills__name, .p-skills__name{
-        font-size: 1.5rem;
+    .card-1, .card-2, .card-3, .card-4{
+       min-height: 600px ;
     }
 
 }
